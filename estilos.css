@@ -1,0 +1,685 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* ---------------------------------------------------------------------- 1PX ---------------------------------------------------------*/
+@media only screen and (min-width: 1px) {
+  nav {
+    background-color: white;
+    height: 180px;
+    width: 100%;
+  }
+  nav img {
+    height: 50px;
+    width: 100px;
+    margin-left: 50px;
+  }
+  nav .barra {
+    padding: auto;
+  }
+  nav .barra li {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    font-family: "Poiret One", cursive;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+  }
+  nav .barra ul {
+    list-style: none;
+  }
+  nav .barra a {
+    text-decoration: none;
+    color: rgb(39, 43, 46);
+  }
+  nav .barra a a:hover {
+    color: #ebcda1;
+  }
+  .art1 {
+    height: 120px;
+    width: 100%;
+    background-image: url(./fotosGeneral/fondo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .art1 h1 {
+    color: antiquewhite;
+    text-align: left;
+    font-size: 10px;
+    font-family: "Poiret One", cursive;
+    padding: 10px 20px;
+  }
+  .art2 {
+    height: 120px;
+    width: 100%;
+    background-image: url(./fotosGeneral/fondo1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .art2 h1 {
+    color: rgb(192, 172, 118);
+    text-align: right;
+    padding: 10px 20px;
+    font-size: 10px;
+    font-family: "Poiret One", cursive;
+  }
+  .art2 h1 span {
+    font-size: 8px;
+    font-weight: bold;
+  }
+  .destinos {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(/fotosGeneral/fondo3.png);
+  }
+  .destinos .p1 {
+    font-family: "Poiret One", cursive;
+    text-align: center;
+    font-size: 10px;
+    padding: 30px 0px;
+    color: rgb(39, 43, 46);
+  }
+  .destinos .p2 {
+    font-family: "Poiret One", cursive;
+    text-align: center;
+    font-size: 10px;
+    color: rgb(39, 43, 46);
+  }
+  .destinos .flex {
+    width: 80%;
+    overflow-x: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .destinos .flex img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    scroll-snap-align: center;
+    border-radius: 20px;
+  }
+  .destinos ::-webkit-scrollbar {
+    display: none;
+  }
+  .vermas {
+    margin-top: 30px;
+    height: 80px;
+    text-align: center;
+    margin-top: 0 auto;
+  }
+  .vermas a {
+    background-color: #ebcda1;
+    font-family: "Poiret One", cursive;
+    font-weight: bold;
+    color: rgb(39, 43, 46);
+    border-radius: 8px;
+    font-size: 10px;
+    border: 10px solid #ebcda1;
+    list-style: none;
+    text-decoration: none;
+  }
+  .vermas a a:hover {
+    color: white;
+  }
+  footer {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(39, 43, 46);
+    padding: 0 auto;
+  }
+  footer h2 {
+    font-family: "Poiret One", cursive;
+    font-size: 10px;
+    color: #ebcda1;
+    text-align: center;
+    padding: 15px;
+  }
+  footer div {
+    font-family: "Poiret One", cursive;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    width: 32%;
+    height: 40px;
+  }
+  footer a {
+    text-decoration: none;
+    color: #ebcda1;
+    font-size: 20px;
+    padding: 20px;
+    border: 2px solid #ebcda1;
+    border-radius: 20px;
+  }
+  footer p {
+    font-family: "Poiret One", cursive;
+    color: #ebcda1;
+    text-align: center;
+    margin-top: 15px;
+    padding: 20px;
+    font-size: 8px;
+  }
+  .glaciar {
+    width: 100%;
+    height: 150px;
+    background-image: url(/fotosGeneral/glaciar.jpg);
+    background-size: cover;
+  }
+  .up {
+    background-color: #ebcda1;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    position: fixed;
+    right: 5px;
+    bottom: 100px;
+  }
+  .lugares {
+    width: 100%;
+    height: 270px;
+    /*CORCHETE CIERRE SECTION*/
+  }
+  .lugares .lugar1 p {
+    font-family: "Poiret One", cursive;
+    text-align: center;
+    font-size: 10px;
+    color: rgb(39, 43, 46);
+    padding: 40px 0px;
+  }
+  .lugares section {
+    background-color: white;
+    background-size: cover;
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(15, 100px);
+  }
+  .lugares section .item {
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 6px;
+    background-size: cover;
+    background-position: center;
+  }
+  .lugares section .blea {
+    background-image: url(/fotosDestinos/Bañado\ la\ Estrella.jpeg);
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .lugares section .cdia {
+    background-image: url(fotosDestinos/Cataratas\ del\ Iguazu.jpeg);
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .lugares section .cdaa {
+    background-image: url(/fotosDestinos/Cañon\ de\ Atuel.jpeg);
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .lugares section .cca {
+    background-image: url(/fotosDestinos/Cusi\ Cusi.jpeg);
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .lugares section .eca {
+    background-image: url(/fotosDestinos/El\ Chaltén.png);
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .lugares section .eha {
+    background-image: url(/fotosDestinos/El\ Hornocal.jpeg);
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  .lugares section .gpma {
+    background-image: url(/fotosDestinos/Glaciar\ Perito\ Moreno.jpeg);
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+  .lugares section .ppca {
+    background-image: url(/fotosDestinos/Parque\ Nacional\ Copahue.jpeg);
+    grid-column: 1/2;
+    grid-row: 8/9;
+  }
+  .lugares section .pnla {
+    background-image: url(/fotosDestinos/Parque\ Nacional\ Lanín.jpeg);
+    grid-column: 1/2;
+    grid-row: 9/10;
+  }
+  .lugares section .pnlca {
+    background-image: url(/fotosDestinos/Parque\ Nacional\ Los\ Cardones.jpeg);
+    grid-column: 1/2;
+    grid-row: 10/11;
+  }
+  .lugares section .pnmla {
+    background-image: url(/fotosDestinos/Parque\ Nacional\ Monte\ León.jpeg);
+    grid-column: 1/2;
+    grid-row: 11/12;
+  }
+  .lugares section .sga {
+    background-image: url(/fotosDestinos/Salinas\ Grandes.jpeg);
+    grid-column: 1/2;
+    grid-row: 12/13;
+  }
+  .lugares section .srdca {
+    background-image: url(/fotosDestinos/Santa\ Rosa\ de\ Calamuchita.jpeg);
+    grid-column: 1/2;
+    grid-row: 13/14;
+  }
+  .lugares section .tga {
+    background-image: url(/fotosDestinos/Tolar\ Grande.jpeg);
+    grid-column: 1/2;
+    grid-row: 14/15;
+  }
+  .main1 {
+    height: auto;
+    width: 100%;
+    display: grid;
+    padding: 25px;
+    margin-top: 1400px;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(14, auto);
+  }
+  .main1 .ble {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .main1 .ble img {
+    margin-top: 15px;
+    border-radius: 20px;
+    width: 100%;
+  }
+  .main1 .ble h4 {
+    text-align: center;
+    font-family: "Poiret One", cursive;
+    font-size: 15px;
+  }
+  .main1 .ble p {
+    font-family: "Poiret One", cursive;
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .main1 .cdi {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .main1 .cdi img {
+    margin-top: 15px;
+    border-radius: 20px;
+    width: 100%;
+  }
+  .main1 .cdi h4 {
+    text-align: center;
+    font-family: "Poiret One", cursive;
+    font-size: 15px;
+  }
+  .main1 .cdi p {
+    font-family: "Poiret One", cursive;
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .main1 .cda {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .main1 .cda img {
+    margin-top: 15px;
+    border-radius: 20px;
+    width: 100%;
+  }
+  .main1 .cda h4 {
+    text-align: center;
+    font-family: "Poiret One", cursive;
+    font-size: 15px;
+  }
+  .main1 .cda p {
+    font-family: "Poiret One", cursive;
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .main1 .cc {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .main1 .cc img {
+    margin-top: 15px;
+    border-radius: 20px;
+    width: 100%;
+  }
+  .main1 .cc h4 {
+    text-align: center;
+    font-family: "Poiret One", cursive;
+    font-size: 15px;
+  }
+  .main1 .cc p {
+    font-family: "Poiret One", cursive;
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .main1 .ec {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .main1 .ec img {
+    margin-top: 15px;
+    border-radius: 20px;
+    width: 100%;
+  }
+  .main1 .ec h4 {
+    text-align: center;
+    font-family: "Poiret One", cursive;
+    font-size: 15px;
+  }
+  .main1 .ec p {
+    font-family: "Poiret One", cursive;
+    text-align: justify;
+    margin-top: 15px;
+    font-size: 12px;
+  }
+  .main1 .eh {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  .main1 .eh img {
+    margin-top: 15px;
+    border-radius: 20px;
+    width: 100%;
+  }
+  .main1 .eh h4 {
+    text-align: center;
+    font-family: "Poiret One", cursive;
+    font-size: 15px;
+  }
+  .main1 .eh p {
+    font-family: "Poiret One", cursive;
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .main1 .gpm {
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+  .main1 .gpm img {
+    margin-top: 15px;
+    border-radius: 20px;
+    width: 100%;
+  }
+  .main1 .gpm h4 {
+    text-align: center;
+    font-family: "Poiret One", cursive;
+    font-size: 15px;
+  }
+  .main1 .gpm p {
+    font-family: "Poiret One", cursive;
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .main1 .ppc {
+    grid-column: 1/2;
+    grid-row: 9/10;
+  }
+  .main1 .ppc img {
+    margin-top: 15px;
+    border-radius: 20px;
+    width: 100%;
+  }
+  .main1 .ppc h4 {
+    text-align: center;
+    font-family: "Poiret One", cursive;
+    font-size: 15px;
+  }
+  .main1 .ppc p {
+    font-family: "Poiret One", cursive;
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .main1 .pnl {
+    grid-column: 1/2;
+    grid-row: 10/11;
+  }
+  .main1 .pnl img {
+    margin-top: 15px;
+    border-radius: 20px;
+    width: 100%;
+  }
+  .main1 .pnl h4 {
+    text-align: center;
+    font-family: "Poiret One", cursive;
+    font-size: 15px;
+  }
+  .main1 .pnl p {
+    font-family: "Poiret One", cursive;
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .main1 .pnlc {
+    grid-column: 1/2;
+    grid-row: 11/12;
+  }
+  .main1 .pnlc img {
+    margin-top: 15px;
+    border-radius: 20px;
+    width: 100%;
+  }
+  .main1 .pnlc h4 {
+    text-align: center;
+    font-family: "Poiret One", cursive;
+    font-size: 15px;
+  }
+  .main1 .pnlc p {
+    font-family: "Poiret One", cursive;
+    text-align: justify;
+    margin-top: 15px;
+    font-size: 12px;
+  }
+  .main1 .pnml {
+    grid-column: 1/2;
+    grid-row: 12/13;
+  }
+  .main1 .pnml img {
+    margin-top: 15px;
+    border-radius: 20px;
+    width: 100%;
+  }
+  .main1 .pnml h4 {
+    text-align: center;
+    font-family: "Poiret One", cursive;
+    font-size: 15px;
+  }
+  .main1 .pnml p {
+    font-family: "Poiret One", cursive;
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .main1 .sg {
+    grid-column: 1/2;
+    grid-row: 13/14;
+  }
+  .main1 .sg img {
+    margin-top: 15px;
+    border-radius: 20px;
+    width: 100%;
+  }
+  .main1 .sg h4 {
+    text-align: center;
+    font-family: "Poiret One", cursive;
+    font-size: 15px;
+  }
+  .main1 .sg p {
+    font-family: "Poiret One", cursive;
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .main1 .srdc {
+    grid-column: 1/2;
+    grid-row: 14/15;
+  }
+  .main1 .srdc img {
+    margin-top: 15px;
+    border-radius: 20px;
+    width: 100%;
+  }
+  .main1 .srdc h4 {
+    text-align: center;
+    font-family: "Poiret One", cursive;
+    font-size: 15px;
+  }
+  .main1 .srdc p {
+    font-family: "Poiret One", cursive;
+    text-align: justify;
+    margin-top: 15px;
+    font-size: 12px;
+  }
+  .main1 .tg {
+    grid-column: 1/2;
+    grid-row: 15/16;
+  }
+  .main1 .tg img {
+    margin-top: 15px;
+    border-radius: 20px;
+    width: 100%;
+  }
+  .main1 .tg h4 {
+    text-align: center;
+    font-family: "Poiret One", cursive;
+    font-size: 15px;
+  }
+  .main1 .tg p {
+    font-family: "Poiret One", cursive;
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  /*CIERRE DEL MAIN*/
+  .fondoconsejos {
+    height: 170px;
+    width: 100%;
+    background-image: url(/fotosGeneral/plains-666927_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .consejos {
+    height: 120px;
+    width: 100%;
+  }
+  .consejos i {
+    font-size: 14px;
+    padding: 10px;
+    margin-left: 5px;
+    margin-top: 25px;
+    border: 1px solid rgb(39, 43, 46);
+    border-radius: 5px;
+  }
+  .tips {
+    height: 1600px;
+    width: 100%;
+    padding: 8px;
+    background-image: url(/fotosGeneral/fondo4.png);
+  }
+  .tips .preparativos {
+    font-family: "Poiret One", cursive;
+    text-align: justify;
+    line-height: 15px;
+    font-size: 12px;
+    text-align: justify;
+  }
+  .tips .preparativos h3 {
+    margin-left: 10px;
+    margin-bottom: 15px;
+  }
+  .tips .preparativos li {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+  .tips .ruta {
+    font-family: "Poiret One", cursive;
+    text-align: justify;
+    line-height: 15px;
+    font-size: 12px;
+    text-align: justify;
+  }
+  .tips .ruta h3 {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+  }
+  .tips .ruta li {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+  .tips .fuego {
+    font-family: "Poiret One", cursive;
+    text-align: justify;
+    line-height: 15px;
+    font-size: 12px;
+    text-align: justify;
+  }
+  .tips .fuego h3 {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+  }
+  .tips .fuego li {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+  .tips .basura {
+    font-family: "Poiret One", cursive;
+    text-align: justify;
+    line-height: 15px;
+    font-size: 12px;
+    text-align: justify;
+  }
+  .tips .basura h3 {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+  }
+  .tips .basura li {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+  .tips .seguro {
+    font-family: "Poiret One", cursive;
+    text-align: justify;
+    line-height: 15px;
+    font-size: 12px;
+    text-align: justify;
+  }
+  .tips .seguro h3 {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+  }
+  .tips .seguro li {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+  /*CORCHETE CIERRE TIPS*/
+} /*CORCHETE CIERRE RESPONSIVE 1PX*/
+
+/*# sourceMappingURL=estilos.css.map */
